@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 35, in script
+    c sexy "who are you?"
+Exception: Say has image attributes (u'sexy',), but there's no image tag associated with the speaking character.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 35, in script
+    c sexy "who are you?"
+  File "C:\Users\Michalez\Desktop\renpy-6.99.14.1-sdk\renpy\ast.py", line 643, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\Users\Michalez\Desktop\renpy-6.99.14.1-sdk\renpy\exports.py", line 1176, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Michalez\Desktop\renpy-6.99.14.1-sdk\renpy\character.py", line 949, in __call__
+    self.resolve_say_attributes(False, wanted=speaking)
+  File "C:\Users\Michalez\Desktop\renpy-6.99.14.1-sdk\renpy\character.py", line 845, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes (u'sexy',), but there's no image tag associated with the speaking character.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.14.1.3218
+caspers magical day 1.0
+Tue Feb 20 13:33:07 2018
