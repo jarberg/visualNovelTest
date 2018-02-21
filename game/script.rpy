@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
+$ testy = False
 
 # The game starts here.
 
@@ -25,7 +25,7 @@ label start:
 
     m "hello there."
 
-    c "who are you?"
+    c confused "who are you?"
 
     m "im the narrator of your life"
 
@@ -76,7 +76,8 @@ label start:
         m "alright it is. But that shits \"in\" these days man. plus we will get mad dough"
         c  "i like dough"
         "And so, we become a game creating duo."
-
+        $ mood = _("games")
+        jump end
 
         # This ends the game.
     label m2:
@@ -84,6 +85,8 @@ label start:
         c yeah "I FUCKING LOVE INTERACTION AND BOOKS!!!!!"
         m "well shit"
         "And so, we become a visual novel creating duo."
+        $ mood = _("books")
+        jump end
 
 
         # This ends the game.
@@ -92,9 +95,12 @@ label start:
         m "mad fishy indeed ma niglet"
         c "lets do this shit!"
         "And so, we become a porn creating duo."
+        $ mood = _("fucking porn")
 
+    label end:
 
-    m "i hope this settles that"
-    c confused "naw man. im fucking baked like a clam... if you know whata mean bby"
+        m "i hope this settles that"
+
+        c "I cant wait to make [mood!t] with you faggot."
     return
         # This ends the game.

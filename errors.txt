@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 93: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    return
-    ^
+File "game/script.rpy", line 105: expected statement.
+    Start("follestart")
+                       ^
 
 Ren'Py Version: Ren'Py 6.99.14.1.3218
-Tue Feb 20 14:46:33 2018
+Tue Feb 20 17:50:18 2018

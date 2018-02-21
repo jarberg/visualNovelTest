@@ -1,9 +1,9 @@
 
 
-define c = Character("casper", color="#c8ffc8", image="casper normal")
+define c = Character("test", color="#c8ffc8")
 
-image side casper confused = "casperphone.png"
-image side casper sexy = "casper sexy.png"
+image side test confused = "casperphone"
+image side test sexy = "casper sexy.png"
 image side casper yeah = "casper yeah.png"
 image side casper feels = "casper_feels.png"
 image side casper beauty = "casper.png"
