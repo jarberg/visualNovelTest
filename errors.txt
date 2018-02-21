@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 105: expected statement.
-    Start("follestart")
-                       ^
+File "game/script.rpy", line 4: u'ypox' is not a keyword argument or valid child for the imagemap statement.
+    ypox 200
+        ^
 
 Ren'Py Version: Ren'Py 6.99.14.1.3218
-Tue Feb 20 17:50:18 2018
+Wed Feb 21 18:11:01 2018
